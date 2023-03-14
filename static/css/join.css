@@ -1,0 +1,31 @@
+
+.mybox {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px black;
+    margin-left: 0;
+}
+
+.mybox legend {
+    text-align: center;
+    border-bottom: 1px dashed black;
+}
+
+
+
+.join_form {
+    display: inline-block;
+}
+
+.modal_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal_button button {
+    margin: 20px auto 10px 10px;
+}
