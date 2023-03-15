@@ -30,3 +30,19 @@
     background: whitesmoke;
     text-align: center
 }
+
+.comment {
+    width: 80%;
+    margin: 0 0 20px 20px;
+}
+
+.comment_name {
+    margin: 100px 0 10px 0;
+    width: 10%;
+}
+
+.comment_text {
+    width: 50%;
+    height: 1cm;
+
+}
