@@ -65,11 +65,18 @@ def submit():
 
     doc = {
         'name': name_receive,
-        'reply': reply_receive
+        'reply': reply_receive,
+        'date':datetime.datetime.now(),
     }
     db.replys.insert_one(doc)
 
     return jsonify({'result': 'success', 'msg': '저장완료'})
+
+@app.route('/replys', methods=["GET"])
+def show_reply():
+    replys = list(db.replys.find()['_id':False])
+
+    return jsonify({'comments': replys})
 
 
 if __name__ == '__main__':
